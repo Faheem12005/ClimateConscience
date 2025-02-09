@@ -6,12 +6,15 @@ main {
 }
 
 .main-cta {
+    padding-top: 10%;
     padding-left: 10%;
 }
 
 .main-text {
     font-weight: 600;
     font-size: 15vh;
+    line-height: 0.9;
+    margin-bottom: 2vh;
 }
 
 .main-cta p {
@@ -31,18 +34,51 @@ main {
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 2vh;
-    padding-top: 15vh;
+    align-items: end;
     width: 100%;
-    height: 120vh;
-    background: linear-gradient(to top, rgba(255,255,255,255) 75%, rgba(255,255,255,0));
+    height: 90vh;
+    padding-bottom: 10vh;
+    background: linear-gradient(to top, rgba(255,255,255,255) 70%, rgba(255,255,255,0));
 }
 
-.cards{
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 40vh;
-    width: 60vh;
-    padding: 20px;
-    background-color: green;
+    width: 55vh;
+    padding: 40px 20px 20px 20px;
+    background-color: rgba(172, 225, 175, 0.5); /* Adjust the last value for opacity */
     border-radius: 50px;
+    transition: all ease-in-out 0.5s;
+}
+
+.cards:hover {
+    background-color: rgba(172, 203, 225, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cards:hover h1{
+    color: rgb(129, 129, 234);
+}
+
+.cards img {
+    object-fit: cover;
+    border-radius: 50px;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1vh;
+}
+
+.cards h1, p {
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.cards h1 {
+    color: #235347;
+    transition: all ease-in-out 0.5s;
 }

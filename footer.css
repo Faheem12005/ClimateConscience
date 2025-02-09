@@ -1,0 +1,27 @@
+footer {
+    gap: 15vh;
+    display: flex;
+    padding: 10vh;
+    width: 100%;
+    background-color: #ceddd1;
+}
+
+footer p,h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-link img{
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-link img:hover {
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
