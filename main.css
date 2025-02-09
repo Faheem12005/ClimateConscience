@@ -15,6 +15,11 @@ main {
     font-size: 15vh;
     line-height: 0.9;
     margin-bottom: 2vh;
+    transition: all ease-in-out 0.5s;
+}
+
+.main-text:hover{
+    transform: scale(1.1);
 }
 
 .main-cta p {
@@ -81,4 +86,80 @@ main {
 .cards h1 {
     color: #235347;
     transition: all ease-in-out 0.5s;
+}
+
+.main-mission {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.main-mission h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.mission-cards-even {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    min-height: 70vh; /* Increased height to fit both elements */
+}
+.mission-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 90vh;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.mission-overlay-even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    height: 35vh;
+    width: 70vh;
+    position: absolute;
+    bottom: -10%;
+    right: -80%;
+    border-radius: 25px;
+}
+
+
+.mission-cards-odd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    min-height: 70vh; /* Increased height to fit both elements */
+}
+
+.mission-overlay-odd {
+    padding: 35px;
+    height: 35vh;
+    width: 70vh;
+    background-color: rgb(235, 255, 235);
+    position: absolute;
+    bottom: -10%;
+    left: -80%;
+    border-radius: 25px;
+}
+
+.mission-heading {
+    text-align: center;
+}
+
+.mission-subheading {
+    text-align: center;
+    margin-bottom: 20px;
 }
