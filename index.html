@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
     <header>
@@ -31,9 +34,11 @@
                 <a href="quiz/quiz.html">Quizzes</a>
                 <a>About Us</a>
             </div>
-            <button class="contact-btn">
-                Contact Us
-            </button>
+            <a href="contact.html">
+                <button class="contact-btn">
+                    Contact Us
+                </button>
+            </a>
         </nav>
     </header>
     <main>
@@ -42,10 +47,10 @@
                 <p style="color: #235347;">Learn. Act</p>
                 <p style="color: #0b2b26;">Grow. Sustain</p>
             </div>
-            <p class="main-subtext">
+            <div class="main-subtext">
                 Small actions spark big change. Educate, inspire<br>
                 and build a greener future—one step at a time.
-            </p>
+            </div>
         </div>
         <div class="main-cards">
             <div class="cards">
@@ -132,5 +137,24 @@
             <p>&copy; 2025 CliConscience. All rights reserved.<br> <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </footer>
+
+    <!-- Modal (Hidden by Default) -->
+    <div id="imageModal" class="modal" style="display: none;">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1000,
+            delay: 400,
+        });
+        ScrollReveal().reveal('.mission-cards-even', { origin: 'left', delay: 150 });
+        ScrollReveal().reveal('.mission-cards-odd', { origin: 'right', delay: 150 });
+
+    </script>
+    <script src="scripts/homescript.js"></script>
 </body>
 </html>
