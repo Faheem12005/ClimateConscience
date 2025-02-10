@@ -1,0 +1,22 @@
+main {
+    padding: 5vh;
+    font-family: "Poppins", serif;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.card {
+    height: 50vh;
+    width: 70vh;
+    background-color: #f0ddd6;
+    padding: 5vh;
+    border-radius: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

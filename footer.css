@@ -25,3 +25,21 @@ footer p,h1 {
     display: flex;
     gap: 20px;
 }
+
+.footer-column-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.footer-column-links a {
+    text-decoration: none;
+}
+
+.footer-column-links a:visited {
+    color: black;
+}
+
+.footer-column-links a:hover {
+    color: rgb(73, 73, 73);
+}
