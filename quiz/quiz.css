@@ -1,0 +1,189 @@
+body {
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    padding-right: 16vh;
+    padding-left: 16vh;
+    height: 15vh;
+    position: sticky;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vh;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,10) 60%, rgba(255,255,255,0));
+}
+
+.nav-links {
+    display: flex;
+    gap: 10vh;
+}
+
+.nav-links a {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the text */
+    text-decoration: none; /* Remove default underline */
+    color: black;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: rgb(121, 121, 121); 
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: rgb(121, 121, 121);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.contact-btn {
+    border: none;
+    background-color: lightblue;
+    border-radius: 50px;
+    padding: 3vh;
+    font-weight: 600;
+    font-size: 2vh;
+    transition: all ease-in-out 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: lightblue;
+}
+
+.nav-logo-container {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-logo {
+    float: left;
+    display: inline;
+    height: 4vh;
+}
+
+.nav-title {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 4vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.quiz-container {
+    max-width: 1000px;
+    margin: 5vh auto;
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2vh;
+}
+
+.quiz-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vh;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+}
+
+.quiz-title {
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.quiz-description {
+    font-size: 2vh;
+    color: #666;
+    margin-bottom: 2vh;
+}
+
+.quiz-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: lightblue;
+    color: black;
+    padding: 1vh 2vh;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.quiz-link:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: lightblue;
+}
+
+/* footer styling */
+
+
+footer {
+    gap: 15vh;
+    display: flex;
+    padding: 10vh;
+    width: 100%;
+    background-color: #ceddd1;
+}
+
+footer p,h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-link img{
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-link img:hover {
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-column-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.footer-column-links a {
+    text-decoration: none;
+}
+
+.footer-column-links a:visited {
+    color: black;
+}
+
+.footer-column-links a:hover {
+    color: rgb(73, 73, 73);
+}

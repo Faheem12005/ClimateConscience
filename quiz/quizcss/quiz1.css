@@ -1,0 +1,204 @@
+body {
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-padding-top: 18vh; /* Adjust based on navbar height */
+}
+
+
+.nav-bar {
+    padding-right: 16vh;
+    padding-left: 16vh;
+    height: 15vh;
+    position: fixed;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vh;
+    width: 100%;  /* Ensure it stretches across the screen */
+    background-color: white;
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    border-bottom: 2px solid #ddd;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 10vh;
+}
+
+.nav-links a {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the text */
+    text-decoration: none; /* Remove default underline */
+    color: black;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: rgb(121, 121, 121); 
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: rgb(121, 121, 121);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.contact-btn {
+    border: none;
+    background-color: lightblue;
+    border-radius: 50px;
+    padding: 3vh;
+    font-weight: 600;
+    font-size: 2vh;
+    transition: all ease-in-out 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: lightblue;
+}
+
+.nav-logo-container {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-logo {
+    float: left;
+    display: inline;
+    height: 4vh;
+}
+
+.nav-title {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 4vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar {
+    width: 20vh;
+    height: 100%;
+    position: fixed;
+    background: #f1f1f1;
+    padding: 2vh;
+    border-right: 2px solid #ddd; /* Adds a subtle separation */
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 1vh;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: 500;
+    color: black;
+}
+
+.quiz-content {
+    margin-left: 22vh;
+    width: 70vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    background-color: white;
+    margin-top: 15vh; /* Same as navbar height */ width: 100%;  /* Ensure it stretches across the screen */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.quiz-question {
+    margin-bottom: 3vh;
+}
+
+.quiz-question img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1vh;
+}
+
+h1 {
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 1vh;
+}
+
+#submit-btn {
+    background-color: lightblue;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: black;
+    color: lightblue;
+}
+
+#quiz-result {
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+
+.explanation {
+    color: red;
+    font-size: 1.8vh;
+    margin-top: 1vh;
+    display: none;
+}
