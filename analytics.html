@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <p>@CliConscience</p>
+        <h2>Analytics</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="analytics.html" class="active">Analytics</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>Analytics Overview</h1>
+        </header>
+
+        <section class="analytics-container">
+            <div class="chart-box">
+                <h3>Assignments Completed Per Day</h3>
+                <canvas id="assignmentsChart"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Answers Correct Per Quiz</h3>
+                <canvas id="quizChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="analytics.js"></script>
+
+</body>
+</html>

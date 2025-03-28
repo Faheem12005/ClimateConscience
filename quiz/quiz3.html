@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Quiz</title>
+    <link rel="stylesheet" href="quizcss/quiz1.css">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo-container">
+            <img src="../mainassets/icons/global-warming.png" class="nav-logo">
+            <p class="nav-title">CliConscience</p>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../modules/modules.html">Learning Modules</a>
+            <a style="font-weight: bold; color: #80ef80;">Quizzes</a>
+            <a href="../about.html">About Us</a>
+        </div>
+        <a href="../contact.html">
+            <button class="contact-btn">Contact Us</button>
+        </a>
+    </nav>
+    <aside class="sidebar">
+        <h2>Questions</h2>
+        <ul>
+            <li><a href="#q1">1</a></li>
+            <li><a href="#q2">2</a></li>
+            <li><a href="#q3">3</a></li>
+            <li><a href="#q4">4</a></li>
+            <li><a href="#q5">5</a></li>
+            <li><a href="#q6">6</a></li>
+            <li><a href="#q7">7</a></li>
+            <li><a href="#q8">8</a></li>
+            <li><a href="#q9">9</a></li>
+            <li><a href="#q10">10</a></li>
+        </ul>        
+    </aside>
+    <main>
+        <section class="quiz-content">
+            <h1>Sustainability Insights Quiz</h1>
+            <form id="quiz-form">
+                <!-- Unique Question 1 -->
+                <div class="quiz-question" id="q1">
+                    <h2>1. What percentage of global waste is currently recycled?</h2>
+                    <label><input type="radio" name="q1" value="a"> A. 9%</label>
+                    <label><input type="radio" name="q1" value="b"> B. 25%</label>
+                    <label><input type="radio" name="q1" value="c"> C. 45%</label>
+                    <p class="explanation" id="explain-q1"></p>
+                </div>
+                <!-- Unique Question 2 -->
+                <div class="quiz-question" id="q2">
+                    <h2>2. Which industry consumes the most water globally?</h2>
+                    <label><input type="radio" name="q2" value="a"> A. Manufacturing</label>
+                    <label><input type="radio" name="q2" value="b"> B. Agriculture</label>
+                    <label><input type="radio" name="q2" value="c"> C. Energy Production</label>
+                    <p class="explanation" id="explain-q2"></p>
+                </div>
+                <!-- Unique Question 3 -->
+                <div class="quiz-question" id="q3">
+                    <h2>3. What is a 'circular economy'?</h2>
+                    <label><input type="radio" name="q3" value="a"> A. An economy that minimizes waste and maximizes resource use</label>
+                    <label><input type="radio" name="q3" value="b"> B. A financial system based on circular trading</label>
+                    <label><input type="radio" name="q3" value="c"> C. An economic model that only uses circular buildings</label>
+                    <p class="explanation" id="explain-q3"></p>
+                </div>
+                <!-- Unique Question 4 -->
+                <div class="quiz-question" id="q4">
+                    <h2>4. How much food is wasted globally each year?</h2>
+                    <label><input type="radio" name="q4" value="a"> A. 13%</label>
+                    <label><input type="radio" name="q4" value="b"> B. 33%</label>
+                    <label><input type="radio" name="q4" value="c"> C. 53%</label>
+                    <p class="explanation" id="explain-q4"></p>
+                </div>
+                <!-- Unique Question 5 -->
+                <div class="quiz-question" id="q5">
+                    <h2>5. What is 'greenwashing'?</h2>
+                    <label><input type="radio" name="q5" value="a"> A. Painting buildings green</label>
+                    <label><input type="radio" name="q5" value="b"> B. Misleading marketing about environmental practices</label>
+                    <label><input type="radio" name="q5" value="c"> C. A type of eco-friendly cleaning</label>
+                    <p class="explanation" id="explain-q5"></p>
+                </div>
+                <!-- Unique Question 6 -->
+                <div class="quiz-question" id="q6">
+                    <h2>6. What is the most sustainable protein source?</h2>
+                    <label><input type="radio" name="q6" value="a"> A. Beef</label>
+                    <label><input type="radio" name="q6" value="b"> B. Chicken</label>
+                    <label><input type="radio" name="q6" value="c"> C. Insects</label>
+                    <p class="explanation" id="explain-q6"></p>
+                </div>
+                <!-- Unique Question 7 -->
+                <div class="quiz-question" id="q7">
+                    <h2>7. What does 'carbon neutral' mean?</h2>
+                    <label><input type="radio" name="q7" value="a"> A. Producing zero carbon emissions</label>
+                    <label><input type="radio" name="q7" value="b"> B. Balancing carbon emissions with carbon removal</label>
+                    <label><input type="radio" name="q7" value="c"> C. Using only carbon-based materials</label>
+                    <p class="explanation" id="explain-q7"></p>
+                </div>
+                <!-- Unique Question 8 -->
+                <div class="quiz-question" id="q8">
+                    <h2>8. What percentage of global plastic is actually recycled?</h2>
+                    <label><input type="radio" name="q8" value="a"> A. 5%</label>
+                    <label><input type="radio" name="q8" value="b"> B. 15%</label>
+                    <label><input type="radio" name="q8" value="c"> C. 25%</label>
+                    <p class="explanation" id="explain-q8"></p>
+                </div>
+                <!-- Unique Question 9 -->
+                <div class="quiz-question" id="q9">
+                    <h2>9. What is the most effective individual action for sustainability?</h2>
+                    <label><input type="radio" name="q9" value="a"> A. Recycling</label>
+                    <label><input type="radio" name="q9" value="b"> B. Reducing overall consumption</label>
+                    <label><input type="radio" name="q9" value="c"> C. Using electric vehicles</label>
+                    <p class="explanation" id="explain-q9"></p>
+                </div>
+                <!-- Unique Question 10 -->
+                <div class="quiz-question" id="q10">
+                    <h2>10. What is an 'ecosystem service'?</h2>
+                    <label><input type="radio" name="q10" value="a"> A. A government environmental program</label>
+                    <label><input type="radio" name="q10" value="b"> B. Benefits humans receive from natural ecosystems</label>
+                    <label><input type="radio" name="q10" value="c"> C. A type of ecological research</label>
+                    <p class="explanation" id="explain-q10"></p>
+                </div>
+                <button type="button" id="submit-btn">Submit</button>
+            </form>
+            <div id="quiz-result">
+                <p id="quiz-result" style="font-size: 18px; font-weight: bold;"></p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/quiz3.js"></script>
+</body>
+</html>

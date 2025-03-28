@@ -1,0 +1,44 @@
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+}
+
+main {
+    text-align: center;
+}
+
+.start-learning {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #80ef80;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.start-learning:hover {
+    background-color: black;
+    color: #80ef80;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.key-takeaways {
+    background-color: #f0f8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+.key-takeaways h3 {
+    margin-bottom: 10px;
+}

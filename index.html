@@ -1,160 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- roboto font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar">
-            <div class="nav-logo-container">
-                <img src="mainassets/icons/global-warming.png" class="nav-logo">
-                <p class="nav-title">CliConscience</p>
-            </div>
-            <div class="nav-links">
-                <a style="font-weight: bold; color: #80ef80;">Home</a>
-                <a href="#">Learning Modules</a>
-                <a href="quiz/quiz.html">Quizzes</a>
-                <a href="about.html">About Us</a>
-            </div>
-            <a href="contact.html">
-                <button class="contact-btn">
-                    Contact Us
-                </button>
-            </a>
-        </nav>
+      <nav class="nav-bar">
+        <div class="nav-logo-container">
+          <img src="mainassets/icons/global-warming.png" class="nav-logo" />
+          <p class="nav-title">CliConscience</p>
+        </div>
+        <div class="nav-links">
+          <a style="font-weight: bold; color: #80ef80">Home</a>
+          <a href="modules/modules.html">Learning Modules</a>
+          <a href="quiz/quiz.html">Quizzes</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="user-holder">
+          <a href="contact.html">
+            <button class="contact-btn">Contact Us</button>
+          </a>
+          <button class="image-button" onclick="navigateTo('dashboard.html')">
+            <img src="mainassets/icons/user.png" />
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="main-cta">
-            <div class="main-text">
-                <p style="color: #235347;">Learn. Act</p>
-                <p style="color: #0b2b26;">Grow. Sustain</p>
-            </div>
-            <div class="main-subtext">
-                Small actions spark big change. Educate, inspire<br>
-                and build a greener future—one step at a time.
-            </div>
+      <div class="main-cta">
+        <div class="main-text">
+          <p style="color: #235347">Learn. Act</p>
+          <p style="color: #0b2b26">Grow. Sustain</p>
         </div>
-        <div class="main-cards">
-            <div class="cards">
-                <img src="mainassets/mainimages/cardimg1.jpg">
-                <h1>Clean Energy</h1>
-                <p>Switch to renewables today</p>
-            </div>
-            <div class="cards">
-                <img src="mainassets/mainimages/cardimg2.jpg">
-                <h1>Green Choices</h1>
-                <p>Live more sustainably now</p>
-            </div>
-            <div class="cards">
-                <img src="mainassets/mainimages/card3.jpg">
-                <h1>Smart Travel</h1>
-                <p>Choose eco-friendly transport</p>
-            </div>
+        <div class="main-subtext">
+          Small actions spark big change. Educate, inspire<br />
+          and build a greener future—one step at a time.
         </div>
-        <div class="main-mission">
-            <h1 class="mission-heading">Our Mission</h1>
-            <p class="mission-subheading">Making An <span style="font-weight: 800;">Impact</span></p>
-            <div class="mission-cards-even">
-                <div class="mission-icon" style="background-image: url(mainassets/mainimages/plant.jpg);">
-                    <div class="mission-overlay-even" style="background-color: #d6c6b5;">
-                        <h1>Educating the Youth</h1>
-                        <p>Empowering young minds with climate education is key to a sustainable future. By integrating <br>
-                            environmental awareness into learning, we inspire the next generation to take action and innovate for a <br>greener planet. Knowledge fuels change, and the youth hold the power to shape a better tomorrow.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mission-cards-odd">
-                <div class="mission-icon" style="background-image: url(mainassets/mainimages/turtle.jpg);">
-                    <div class="mission-overlay-odd" style="background-color: #7ebeff;">
-                        <h1>Promoting Sustainable Change</h1>
-                        <p>True sustainability starts with small, everyday actions that lead to long-term impact. From reducing <br>
-                            waste to supporting eco-friendly initiatives, we encourage individuals and communities to adopt <br>
-                            responsible habits. Change is most effective when it becomes a shared mission.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mission-cards-even">
-                <div class="mission-icon" style="background-image: url(mainassets/mainimages/snow.jpg);">
-                    <div class="mission-overlay-even" style="background-color: #d8faff;">
-                        <h1>Encouraging Community Involvement</h1>
-                        <p>Climate action thrives when people come together with a common purpose. We foster collaboration <br>
-                            through local clean-ups, tree-planting events, and sustainability workshops. By working as a community,<br>
-                             we can create a lasting impact on both local and global scales.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="main-cards">
+        <div class="cards">
+          <img src="mainassets/mainimages/cardimg1.jpg" />
+          <h1>Clean Energy</h1>
+          <p>Switch to renewables today</p>
         </div>
+        <div class="cards">
+          <img src="mainassets/mainimages/cardimg2.jpg" />
+          <h1>Green Choices</h1>
+          <p>Live more sustainably now</p>
+        </div>
+        <div class="cards">
+          <img src="mainassets/mainimages/card3.jpg" />
+          <h1>Smart Travel</h1>
+          <p>Choose eco-friendly transport</p>
+        </div>
+      </div>
+      <div class="main-mission">
+        <h1 class="mission-heading">Our Mission</h1>
+        <p class="mission-subheading">
+          Making An <span style="font-weight: 800">Impact</span>
+        </p>
+        <div class="mission-cards-even">
+          <div
+            class="mission-icon"
+            style="background-image: url(mainassets/mainimages/plant.jpg)"
+          >
+            <div class="mission-overlay-even" style="background-color: #d6c6b5">
+              <h1>Educating the Youth</h1>
+              <p>
+                Empowering young minds with climate education is key to a
+                sustainable future. By integrating <br />
+                environmental awareness into learning, we inspire the next
+                generation to take action and innovate for a <br />greener
+                planet. Knowledge fuels change, and the youth hold the power to
+                shape a better tomorrow.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mission-cards-odd">
+          <div
+            class="mission-icon"
+            style="background-image: url(mainassets/mainimages/turtle.jpg)"
+          >
+            <div class="mission-overlay-odd" style="background-color: #7ebeff">
+              <h1>Promoting Sustainable Change</h1>
+              <p>
+                True sustainability starts with small, everyday actions that
+                lead to long-term impact. From reducing <br />
+                waste to supporting eco-friendly initiatives, we encourage
+                individuals and communities to adopt <br />
+                responsible habits. Change is most effective when it becomes a
+                shared mission.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mission-cards-even">
+          <div
+            class="mission-icon"
+            style="background-image: url(mainassets/mainimages/snow.jpg)"
+          >
+            <div class="mission-overlay-even" style="background-color: #d8faff">
+              <h1>Encouraging Community Involvement</h1>
+              <p>
+                Climate action thrives when people come together with a common
+                purpose. We foster collaboration <br />
+                through local clean-ups, tree-planting events, and
+                sustainability workshops. By working as a community,<br />
+                we can create a lasting impact on both local and global scales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer-column">
-            <h1>Contact Info</h1>
-            <p>Chennai, India</p>
-            <p>cliconscience@gmail.com</p>
-            <p>+91 7397483733</p>
+      <div class="footer-column">
+        <h1>Contact Info</h1>
+        <p>Chennai, India</p>
+        <p>cliconscience@gmail.com</p>
+        <p>+91 7397483733</p>
+      </div>
+      <div class="footer-column-links">
+        <h1>About</h1>
+        <a href="gallery.html">Who we Are</a>
+        <a href="about.html">Our Story</a>
+        <a>Gallery</a>
+      </div>
+      <div class="footer-column">
+        <h1>Links</h1>
+        <div class="footer-links">
+          <div class="footer-link">
+            <img src="mainassets/icons/facebook.png" />
+          </div>
+          <div class="footer-link">
+            <img src="mainassets/icons/instagram.png" />
+          </div>
+          <div class="footer-link">
+            <img src="mainassets/icons/linkedin.png" />
+          </div>
+          <div class="footer-link">
+            <img src="mainassets/icons/twitter.png" />
+          </div>
         </div>
-        <div class="footer-column-links">
-            <h1>About</h1>
-            <a href="gallery.html">Who we Are</a>
-            <a href="about.html">Our Story</a>
-            <a>Gallery</a>
-        </div>
-        <div class="footer-column">
-            <h1>Links</h1>
-            <div class="footer-links">
-                <div class="footer-link">
-                    <img src="mainassets/icons/facebook.png">
-                </div>
-                <div class="footer-link">
-                    <img src="mainassets/icons/instagram.png">
-                </div>
-                <div class="footer-link">
-                    <img src="mainassets/icons/linkedin.png">
-                </div>
-                <div class="footer-link">
-                    <img src="mainassets/icons/twitter.png">
-                </div>
-            </div>
-        </div>
-        <div class="footer-column">
-            <p>&copy; 2025 CliConscience. All rights reserved.<br> <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-        </div>
+      </div>
+      <div class="footer-column">
+        <p>
+          &copy; 2025 CliConscience. All rights reserved.<br />
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </p>
+      </div>
     </footer>
 
     <!-- Modal (Hidden by Default) -->
-    <div id="imageModal" class="modal" style="display: none;">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImg">
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
     </div>
 
     <script>
-        ScrollReveal({
-            reset: true,
-            distance: '60px',
-            duration: 1000,
-            delay: 400,
-        });
-        ScrollReveal().reveal('.mission-cards-even', { origin: 'left', delay: 150 });
-        ScrollReveal().reveal('.mission-cards-odd', { origin: 'right', delay: 150 });
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("loaded");
+      });
 
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 1000,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".mission-cards-even", {
+        origin: "left",
+        delay: 150,
+      });
+      ScrollReveal().reveal(".mission-cards-odd", {
+        origin: "right",
+        delay: 150,
+      });
+
+      function navigateTo(url) {
+        const transition = document.createElement("div");
+        transition.classList.add("page-transition");
+        document.body.appendChild(transition);
+
+        setTimeout(() => {
+          transition.classList.add("show");
+        }, 10);
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500); // Delay to let the animation play
+      }
     </script>
+
     <script src="scripts/homescript.js"></script>
-</body>
+  </body>
 </html>

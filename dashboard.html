@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <p>@CliConscience</p>
+      <h2>Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <!-- Link to settings -->
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Welcome, <span id="username">User</span>!</h1>
+        <div class="profile-icon">
+          <img
+            id="profilePic"
+            src="default-profile.png"
+            alt="Profile Picture"
+          />
+        </div>
+      </header>
+
+      <section class="dashboard-widgets">
+        <div class="widget badges">
+          <h3>Your Badges</h3>
+          <div class="badge-grid">
+            <div class="badge">🏅 Beginner</div>
+            <div class="badge">🔥 Streak Freak</div>
+            <div class="badge">🌱 Eco Warrior</div>
+          </div>
+        </div>
+
+        <div class="widget notifications">
+          <h3>Notifications</h3>
+          <ul>
+            <li>📢 New quiz on Climate Change!</li>
+            <li>📚 New learning module: Sustainable Living</li>
+            <li>📝 Your quiz results are available</li>
+          </ul>
+        </div>
+
+        <div class="widget progress">
+          <h3>Learning Progress</h3>
+          <p>You've completed <strong>3/5</strong> learning modules.</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%"></div>
+          </div>
+
+          <p class="remaining-title">Remaining Modules:</p>
+          <p class="remaining-module">🌍 Climate Adaptation Strategies</p>
+          <p class="remaining-module">♻️ Circular Economy Principles</p>
+        </div>
+
+        <div class="widget daily-challenge">
+          <h3>🌿 Daily Challenge</h3>
+          <p class="challenge-text">
+            Reduce energy consumption today by turning off unused lights! 💡
+          </p>
+          <button class="challenge-btn" onclick="completeChallenge()">
+            Mark as Completed ✅
+          </button>
+          <p class="streak-info">
+            🔥 Current Streak: <strong id="streak-count">5</strong> Days
+          </p>
+        </div>
+
+        <div class="widget leaderboard">
+          <h3>🏆 Leaderboard</h3>
+          <ul id="leaderboard-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load saved username and profile picture
+        document.getElementById("username").textContent =
+          localStorage.getItem("username") || "User";
+        document.getElementById("profilePic").src =
+          localStorage.getItem("profilePic") || "default-profile.png";
+      });
+
+      const players = [
+        { rank: 1, name: "Alice", points: 1200, icon: "🥇" },
+        { rank: 2, name: "Bob", points: 1100, icon: "🥈" },
+        { rank: 3, name: "Charlie", points: 1000, icon: "🥉" },
+        { rank: 4, name: "David", points: 900, icon: "🏅" },
+      ];
+
+      const leaderboardList = document.getElementById("leaderboard-list");
+
+      players.forEach((player) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="rank">${player.icon} ${player.name}</span> <span>${player.points} pts</span>`;
+        leaderboardList.appendChild(li);
+      });
+
+      //button for marking completion
+      function completeChallenge() {
+        const button = document.querySelector(".challenge-btn");
+        const streakElement = document.getElementById("streak-count");
+
+        // Convert streak count to number and increase by 1
+        let currentStreak = parseInt(streakElement.textContent);
+        streakElement.textContent = currentStreak + 1;
+
+        // Change button text and disable it
+        button.textContent = "Completed! 🎉";
+        button.disabled = true;
+        button.style.backgroundColor = "#ccc"; // Change button color to indicate completion
+      }
+    </script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

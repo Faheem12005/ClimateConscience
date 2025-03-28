@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <p>@CliConscience</p>
+      <h2>Settings</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="settings.html" class="active">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="settings-header">
+      </header>
+
+      <section class="settings-container">
+        <div class="profile-section">
+          <h3>Change Profile Picture</h3>
+          <img
+            id="profilePicPreview"
+            src="default-profile.png"
+            alt="Profile Picture"
+          />
+          <input type="file" id="profilePicInput" accept="image/*" />
+          <button onclick="updateProfilePic()">Upload Picture</button>
+        </div>
+
+        <div class="username-section">
+          <h3>Change Username</h3>
+          <input
+            type="text"
+            id="usernameInput"
+            placeholder="Enter new username"
+          />
+          <button onclick="updateUsername()">Save Username</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="settings.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load saved username
+        document.getElementById("usernameInput").value =
+          localStorage.getItem("username") || "";
+
+        // Load saved profile picture
+        const savedPic = localStorage.getItem("profilePic");
+        if (savedPic) {
+          document.getElementById("profilePicPreview").src = savedPic;
+        }
+      });
+
+      function updateUsername() {
+        const newUsername = document
+          .getElementById("usernameInput")
+          .value.trim();
+        if (newUsername) {
+          localStorage.setItem("username", newUsername);
+          alert("Username updated!");
+        }
+      }
+
+      function updateProfilePic() {
+        const fileInput = document.getElementById("profilePicInput");
+        const file = fileInput.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            localStorage.setItem("profilePic", e.target.result);
+            document.getElementById("profilePicPreview").src = e.target.result;
+            alert("Profile picture updated!");
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
+  </body>
+</html>

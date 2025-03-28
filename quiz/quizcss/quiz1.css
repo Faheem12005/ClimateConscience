@@ -98,37 +98,65 @@ html {
     margin: 0;
 }
 
-
+/* Sidebar Styling */
 .sidebar {
     width: 20vh;
-    height: 100%;
+    height: calc(100% - 15vh); /* Subtract navbar height */
     position: fixed;
+    top: 15vh; /* Start below navbar */
+    left: 0;
     background: #f1f1f1;
     padding: 2vh;
-    border-right: 2px solid #ddd; /* Adds a subtle separation */
+    border-right: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+/* Sidebar Title */
 .sidebar h2 {
     text-align: center;
     font-size: 2.5vh;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
+/* Sidebar Question Navigation */
 .sidebar ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
+/* Sidebar Buttons */
 .sidebar ul li {
-    padding: 1vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Square size */
+    height: 40px;
     text-decoration: none;
-    font-size: 2vh;
-    font-weight: 500;
-    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .quiz-content {
@@ -149,8 +177,9 @@ html {
 }
 
 .quiz-question img {
-    width: 100%;
-    max-width: 300px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1vh;
 }
