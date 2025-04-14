@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Conservation Quiz</title>
+    <link rel="stylesheet" href="quizcss/quiz1.css">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-logo-container">
+            <img src="../mainassets/icons/global-warming.png" class="nav-logo">
+            <p class="nav-title">CliConscience</p>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../modules/modules.html">Learning Modules</a>
+            <a style="font-weight: bold; color: #80ef80;" href="quiz.html">Quizzes</a>
+            <a href="../about.html">About Us</a>
+        </div>
+        <a href="../contact.html">
+            <button class="contact-btn">Contact Us</button>
+        </a>
+    </nav>
+    <aside class="sidebar">
+        <h2>Questions</h2>
+        <ul>
+            <li><a href="#q1">1</a></li>
+            <li><a href="#q2">2</a></li>
+            <li><a href="#q3">3</a></li>
+            <li><a href="#q4">4</a></li>
+            <li><a href="#q5">5</a></li>
+            <li><a href="#q6">6</a></li>
+            <li><a href="#q7">7</a></li>
+            <li><a href="#q8">8</a></li>
+            <li><a href="#q9">9</a></li>
+            <li><a href="#q10">10</a></li>
+        </ul>        
+    </aside>
+    <main>
+        <section class="quiz-content">
+            <h1>Wildlife Conservation Quiz</h1>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="quiz-question" id="q1">
+                    <img src="https://images.unsplash.com/photo-1454789476662-53eb23ba5907?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"/>
+                    <h2>1. What percentage of all species on Earth are currently at risk of extinction?</h2>
+                    <label><input type="radio" name="q1" value="a"> A. 5%</label>
+                    <label><input type="radio" name="q1" value="b"> B. 15%</label>
+                    <label><input type="radio" name="q1" value="c"> C. 25%</label>
+                    <p class="explanation" id="explain-q1"></p>
+                </div>
+                <!-- Question 2 -->
+                <div class="quiz-question" id="q2">
+                    <h2>2. What is the leading cause of species extinction worldwide?</h2>
+                    <img src="https://images.unsplash.com/photo-1508349937151-22b68b72d5b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"/>
+                    <label><input type="radio" name="q2" value="a"> A. Climate change</label>
+                    <label><input type="radio" name="q2" value="b"> B. Habitat loss</label>
+                    <label><input type="radio" name="q2" value="c"> C. Pollution</label>
+                    <p class="explanation" id="explain-q2"></p>
+                </div>
+                <!-- Question 3 -->
+                <div class="quiz-question" id="q3">
+                    <h2>3. What is a "biodiversity hotspot"?</h2>
+                    <img src="https://images.unsplash.com/photo-1741850826386-9cb8e5543c73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D"/>
+                    <label><input type="radio" name="q3" value="a"> A. A region with exceptionally high species diversity that's under threat</label>
+                    <label><input type="radio" name="q3" value="b"> B. A popular tourist destination for wildlife viewing</label>
+                    <label><input type="radio" name="q3" value="c"> C. A zoo with endangered species breeding programs</label>
+                    <p class="explanation" id="explain-q3"></p>
+                </div>
+                <!-- Question 4 -->
+                <div class="quiz-question" id="q4">
+                    <h2>4. Approximately how many elephants are killed each day for their ivory?</h2>
+                    <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"/>
+                    <label><input type="radio" name="q4" value="a"> A. 5</label>
+                    <label><input type="radio" name="q4" value="b"> B. 25</label>
+                    <label><input type="radio" name="q4" value="c"> C. 100</label>
+                    <p class="explanation" id="explain-q4"></p>
+                </div>
+                <!-- Question 5 -->
+                <div class="quiz-question" id="q5">
+                    <h2>5. What is "wildlife trafficking"?</h2>
+                    <img src="https://give.do/blog/wp-content/uploads/2023/06/pexels-pixabay-60013.jpg" alt="Climate Change Image">
+                    <label><input type="radio" name="q5" value="a"> A. Relocating animals between protected areas</label>
+                    <label><input type="radio" name="q5" value="b"> B. Illegal trade of wildlife products or live animals</label>
+                    <label><input type="radio" name="q5" value="c"> C. Tracking animal migration patterns</label>
+                    <p class="explanation" id="explain-q5"></p>
+                </div>
+                <!-- Question 6 -->
+                <div class="quiz-question" id="q6">
+                    <h2>6. Which conservation status indicates the highest risk of extinction?</h2>
+                    <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww"/>
+                    <label><input type="radio" name="q6" value="a"> A. Vulnerable</label>
+                    <label><input type="radio" name="q6" value="b"> B. Endangered</label>
+                    <label><input type="radio" name="q6" value="c"> C. Critically Endangered</label>
+                    <p class="explanation" id="explain-q6"></p>
+                </div>
+                <!-- Question 7 -->
+                <div class="quiz-question" id="q7">
+                    <h2>7. What is an "apex predator"?</h2>
+                    <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"/>
+                    <label><input type="radio" name="q7" value="a"> A. The most aggressive animal in an ecosystem</label>
+                    <label><input type="radio" name="q7" value="b"> B. A predator at the top of the food chain with no natural predators</label>
+                    <label><input type="radio" name="q7" value="c"> C. An invasive predator species</label>
+                    <p class="explanation" id="explain-q7"></p>
+                </div>
+                <!-- Question 8 -->
+                <div class="quiz-question" id="q8">
+                    <h2>8. What percentage of the world's oceans are protected marine areas?</h2>
+                    <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"/>
+                    <label><input type="radio" name="q8" value="a"> A. About 8%</label>
+                    <label><input type="radio" name="q8" value="b"> B. About 30%</label>
+                    <label><input type="radio" name="q8" value="c"> C. About 50%</label>
+                    <p class="explanation" id="explain-q8"></p>
+                </div>
+                <!-- Question 9 -->
+                <div class="quiz-question" id="q9">
+                    <h2>9. What is a "keystone species"?</h2>
+                    <img src="https://images.unsplash.com/photo-1545063914-a1a6ec821c88?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"/>
+                    <label><input type="radio" name="q9" value="a"> A. A species that has a disproportionately large effect on its environment</label>
+                    <label><input type="radio" name="q9" value="b"> B. The most numerous species in an ecosystem</label>
+                    <label><input type="radio" name="q9" value="c"> C. A species that can survive in multiple habitats</label>
+                    <p class="explanation" id="explain-q9"></p>
+                </div>
+                <!-- Question 10 -->
+                <div class="quiz-question" id="q10">
+                    <h2>10. What is "rewilding" in conservation?</h2>
+                    <img src="https://images.unsplash.com/photo-1742321162462-fae6534564c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"/>
+                    <label><input type="radio" name="q10" value="a"> A. Teaching captive animals to survive in the wild</label>
+                    <label><input type="radio" name="q10" value="b"> B. Restoring ecosystems by reintroducing lost animal species and letting natural processes resume</label>
+                    <label><input type="radio" name="q10" value="c"> C. Creating new wilderness areas by relocating human settlements</label>
+                    <p class="explanation" id="explain-q10"></p>
+                </div>
+                <button type="button" id="submit-btn">Submit</button>
+            </form>
+            <div id="quiz-result">
+                <p id="quiz-result" style="font-size: 18px; font-weight: bold;"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/quiz5.js"></script>
+</body>
+</html>

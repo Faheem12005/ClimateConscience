@@ -32,11 +32,7 @@
       <header class="dashboard-header">
         <h1>Welcome, <span id="username">User</span>!</h1>
         <div class="profile-icon">
-          <img
-            id="profilePic"
-            src="default-profile.png"
-            alt="Profile Picture"
-          />
+          <img id="profilePic" src="user.png" alt="Profile Picture" />
         </div>
       </header>
 
@@ -92,11 +88,15 @@
     </main>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Load saved username and profile picture
+        // Load saved username
         document.getElementById("username").textContent =
           localStorage.getItem("username") || "User";
-        document.getElementById("profilePic").src =
-          localStorage.getItem("profilePic") || "default-profile.png";
+
+        // Load saved profile picture
+        const savedPic = localStorage.getItem("profilePic");
+        if (savedPic) {
+          document.getElementById("profilePic").src = savedPic;
+        }
       });
 
       const players = [
